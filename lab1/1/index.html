@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form | webdevtrick.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <form id="form">
+            <div class="form-item box-item">
+                <input id="lastName" type="text" name="lastName" class="tx1" placeholder="Фамилия" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <input id="firstName" type="text" name="firstName" class="tx1" placeholder="Имя" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <div class="form-item-triple">
+                    <div class="radio-label">
+                        <label class="label">Пол</label>
+                    </div>
+                    <div class="form-item">
+                        <input id="Male" type="radio" name="gender" value="Male" data-once>
+                        <label for="Male">Мужской</label>
+                    </div>
+                    <div class="form-item">
+                        <input id="Female" type="radio" name="gender" value="Female" data-once>
+                        <label for="Female">Женский</label>
+                    </div>
+                </div>
+                <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                    <input id="age" type="text" name="age" placeholder="Возраст" data-required>
+                    <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <input id="username" type="text" name="username" placeholder="Логин" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <input id="password" type="password" name="password" type="password" placeholder="Пароль" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <input id="email" name="email" class="tx1" placeholder="Email" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <input id="country" type="text" name="country" placeholder="Страна" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item box-item">
+                <input id="phone" type="text" name="phone" placeholder="Телефон" data-required>
+                <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> обязательное поле</small>
+            </div>
+            <div class="form-item">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

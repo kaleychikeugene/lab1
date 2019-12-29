@@ -1,0 +1,111 @@
+body {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    width: inherit;
+    position: fixed;
+    background-color: burlywood;
+    bottom: 7px;
+}
+
+#container {
+    border: 1px solid;
+    width: 800px;
+    height: -webkit-fill-available;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    height: 800px;
+    width: inherit;
+}
+
+#vertical {
+    border: none;
+    border-left: 2px solid hsla(200, 10%, 50%, 100);
+}
+
+#menu{
+    display: flex;
+    width: 10%;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+small {
+    display: none;
+}
+
+small.errorOnce {
+    margin-top: 2px;
+}
+
+.tx1 {
+    margin-top: 10px;
+}
+
+.form-item i {
+    font-size: 12px;
+    color: red;
+}
+
+.box-item {
+    height: 60px;
+}
+
+.form-item-triple {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+}
+
+.form-item-triple .radio-label {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.form-item-triple .radio-label label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-item-triple .form-item {
+    flex: 3 1 auto;
+    text-align: center;
+    margin: 0;
+}
+
+.form-item-triple .form-item label,
+.form-item-triple .form-item input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+}
